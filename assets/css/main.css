@@ -1130,6 +1130,11 @@
 				height: 100%;
 				display: block;
 			}
+			.item header a video{
+				width: 30em;
+				height: 30em;
+				margin: 0em;
+			}
 
 				.item header a:before {
 					content: '';
@@ -1149,10 +1154,6 @@
 				-ms-transform: scale(1.1);
 				transform: scale(1.1);
 			}*/
-			.item header video{
-				width: calc(100% + 6em);
-			    height: 30em;
-			}
 
 			.item header > * {
 				position: relative;
@@ -1190,6 +1191,11 @@
 		.item header {
 			height: 25em;
 		}
+		.item header a video{
+				width: 30em;
+				height: 25em;
+				margin: 0em;
+			}
 
 		.items {
 			-moz-flex-direction: column;
@@ -1215,29 +1221,17 @@
 
 	}
 
-	.item video{
-		border-top-left-radius: 4px;
-			border-top-right-radius: 4px;
-		/*	margin: -2em 0 3em -2em;*/
-			margin-left: -1em;
-			margin-right: 2em;
-			width: calc(100% + 6em);
-			height: 30em;
-			display: -moz-flex;
-			display: -webkit-flex;
-			display: -ms-flex;
-			display: flex;
-			
-			color: rgba(255, 255, 255, 0.75);
-			position: relative;
-			overflow: auto;
-	}
-
 	@media screen and (max-width: 736px) {
 
 		.item header {
 			height: 15em;
 		}
+
+		.item header a video{
+				width: 30em;
+				height: 15em;
+				margin: 0em;
+			}
 
 		.items .item {
 			margin: 0 0 1em 0;
@@ -1255,9 +1249,16 @@
 				height: 12em;
 				margin: -2em 0 2em -1em;
 				width: calc(100% + 2em);
-			}
+			}	
 
+			.item header a video{
+				width: 30em;
+				height: 13em;
+				margin: -1em 0 2em -1em;
+			}
 	}
+
+	
 
 	/*education*/
 	.educa span,h3{
@@ -1529,11 +1530,9 @@
 			#intro {
 				padding: 2em 1em 0.1em 1em;
 			}
-
 				#intro p br {
 					display: none;
 				}
-
 		}
 
 		/* eddit*/
@@ -1570,6 +1569,11 @@
 
 		}
 
+		/* last img*/
+		.last-img{
+			width: 100%;
+		}
+
 /* Footer */
 
 	#footer {
@@ -1599,6 +1603,7 @@
 			#footer {
 				margin-top: 2em;
 			}
+
 				#footer:before {
 					margin-bottom: 2em;
 				}
